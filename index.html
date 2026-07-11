@@ -86,7 +86,7 @@
         <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
     <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
     <!-- Height badha kar 70px ya 80px karke dekho -->
-    <img src="logo.png" alt="Hirovative Solutions" style="height: 100px; width: auto; max-width: 100%;">
+    <img src="logo.png" alt="Hirovative Solutions" style="height: 160px; width: auto; max-width: 100%;">
 </a>
     <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
@@ -96,6 +96,7 @@
             <a href="index.html" class="nav-item nav-link active">Home</a>
             <a href="about.html" class="nav-item nav-link">About Us</a>
             <a href="services.html" class="nav-item nav-link">Services</a>
+			<a href="industries.html" class="nav-item nav-link">Industries</a>
             <a href="employers.html" class="nav-item nav-link">For Employers</a>
             <a href="job-seekers.html" class="nav-item nav-link">For Job Seekers</a>
             <a href="blogs.html" class="nav-item nav-link">Blogs</a>
@@ -108,25 +109,29 @@
         <!-- Navbar End -->
 
         <!-- Carousel Start -->
-        <div class="container-fluid p-0">
-            <div class="owl-carousel header-carousel position-relative">
-                <div class="owl-carousel-item position-relative">
-                    <img class="img-fluid" src="img/carousel-1.jpg" alt="HR Recruitment Company Team Meeting">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(43, 57, 64, .7);">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
-                                    <h1 class="display-3 text-white animated slideInDown mb-4">Connecting Exceptional Talent with Growing Businesses</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Hiring the right people is one of the most important decisions for every organization. At Hirovative Solutions, we help businesses find skilled professionals through reliable HR Recruitment Services, Staffing Solutions, and Talent Acquisition Services. Whether you are looking for permanent employees, contract staffing, executive hiring, or bulk recruitment, our experienced recruitment specialists ensure you hire faster, smarter, and with complete confidence. We don't simply fill vacancies-we build long-term partnerships by connecting companies with qualified professionals who contribute to business growth and organizational success.</p>
-                                    <a href="employers.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Hire Talent</a>
-                                    <a href="job-seekers.html" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight" style="background-color: #fff; color: #0066CC; border-color: #fff;">Find Your Next Opportunity</a>
-                                </div>
-                            </div>
+       <div class="container-fluid p-0">
+    <div class="owl-carousel header-carousel position-relative">
+        <div class="owl-carousel-item position-relative">
+            <!-- Height aur object-fit set hai -->
+            <img class="w-100" src="https://i.pinimg.com/736x/2e/41/8a/2e418a2c6a935d70d4acf617cba909ba.jpg" alt="HR Recruitment Company Team Meeting" style="object-fit: cover; height: 90vh; min-height: 650px;">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(43, 57, 64, .75);">
+                <!-- pt-5 joda hai taaki navbar ke neeche se shuru ho -->
+                <div class="container pt-5">
+                    <!-- Text ko center me lane ke liye text-center aur justify-content-center -->
+                    <div class="row justify-content-center text-center">
+                        <div class="col-12 col-lg-10">
+                            <h1 class="display-4 text-white animated slideInDown mb-4">Connecting Exceptional Talent with Growing Businesses</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-2">Hiring the right people is one of the most important decisions for every organization. At Hirovative Solutions, we help businesses find skilled professionals through reliable HR Recruitment, Staffing Solutions, and Talent Acquisition Services. Our experienced specialists ensure you hire faster, smarter, and with complete confidence.</p>
+                            
+                            <a href="employers.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Hire Talent</a>
+                            <a href="job-seekers.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight" style="color: #0066CC;">Find Your Next Opportunity</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
         <!-- Carousel End -->
 
         <!-- About Start -->
@@ -136,10 +141,10 @@
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                         <div class="row g-0 about-bg rounded overflow-hidden">
                             <div class="col-6 text-start">
-                                <img class="img-fluid w-100" src="img/about-1.jpg" alt="Professional Recruitment Consultant">
+                                <img class="img-fluid w-100" src="https://i.pinimg.com/736x/cf/b0/9a/cfb09a0b91b994480fb2f99c39a9a783.jpg" alt="Professional Recruitment Consultant">
                             </div>
                             <div class="col-6 text-start">
-                                <img class="img-fluid" src="img/about-2.jpg" style="width: 85%; margin-top: 15%;" alt="Staffing Solutions for Businesses">
+                                <img class="img-fluid" src="https://i.pinimg.com/736x/d3/e9/2b/d3e92b5b5eef930069d621afc4e4ae78.jpg" style="width: 85%; margin-top: 15%;" alt="Staffing Solutions for Businesses">
                             </div>
                             <div class="col-6 text-end">
                                 <img class="img-fluid" src="img/about-3.jpg" style="width: 85%;" alt="Talent Acquisition Services">
@@ -330,7 +335,79 @@
             </div>
         </div>
         <!-- Process End -->
+<!-- CSS (Ise Page ke <head> tag ke andar <style> mein daalein) -->
+<style>
+    .marquee-container {
+        width: 100%;
+        overflow: hidden;
+        padding: 20px 0;
+    }
+    .marquee-inner {
+        display: flex;
+        width: max-content;
+        animation: scroll 25s linear infinite;
+    }
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+    .testimonial-card {
+        width: 350px;
+        margin: 0 15px;
+        background: #f8f9fa;
+        padding: 30px;
+        border-radius: 8px;
+        border: 1px solid #eef2f5;
+        text-align: center;
+        flex-shrink: 0;
+    }
+</style>
 
+<!-- HTML (Ise jahan Testimonial dikhana hai wahan daalein) -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <h1 class="text-center mb-5">What Our Clients & Candidates Say</h1>
+        <div class="marquee-container">
+            <div class="marquee-inner">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="text-primary mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <p class="mb-3">"Hirovative Solutions made our hiring process fast, smooth, and hassle-free."</p>
+                    <h6 class="mb-0">Rajesh Kumar</h6>
+                    <small>HR Manager, IT Company</small>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="text-primary mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <p class="mb-3">"Exceeded our expectations. The quality of candidates made the process seamless."</p>
+                    <h6 class="mb-0">Priya Sharma</h6>
+                    <small>Talent Acquisition Lead</small>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="text-primary mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <p class="mb-3">"Professional, knowledgeable, and efficient. We hired the right talent quickly."</p>
+                    <h6 class="mb-0">Amit Verma</h6>
+                    <small>Operations Manager</small>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="text-primary mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <p class="mb-3">"Excellent recruitment partner! Everything was handled professionally."</p>
+                    <h6 class="mb-0">Neha Singh</h6>
+                    <small>HR Business Partner</small>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="testimonial-card">
+                    <div class="text-primary mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <p class="mb-3">"Hirovative Solutions provided skilled professionals who matched our requirements."</p>
+                    <h6 class="mb-0">Sandeep Mishra</h6>
+                    <small>Managing Director</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
         <!-- FAQ Start -->
         <div class="container-xxl py-5">
             <div class="container">
